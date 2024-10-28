@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+    color: white !important;
+}
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+    
+ .loading{
+position: fixed;
+inset: 0;
+
+  }
+.logo{
+    width: 50px;
+}
+.side-nav-menu{
+    left: -265px;
+    z-index: 10;
+}
+/* .side-nav-menu ul{
+    display: none;
+
+} */
+i{
+  cursor: pointer;
+}
+ .image{
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 16px;
+    background-color: white;
+    opacity: .9;
+    transform: translatey(100%);
+    transition: all .5s;
+}
+.image:hover .layer {
+  transform: translateY(0);
+} 
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.alert{
+    width: fit-content;
+}
+.search input::placeholder{
+    color: white !important;
+    opacity: 1 !important;
+}
